@@ -4,26 +4,26 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="None">
         
         
-        <link rel="shortcut icon" href="img/favicon.ico">
-        <title>Breezebee</title>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/font-awesome.min.css" rel="stylesheet">
-        <link href="css/base.css" rel="stylesheet">
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>README - Breezebee</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
 
-        <script src="js/jquery-1.10.2.min.js" defer></script>
-        <script src="js/bootstrap.min.js" defer></script>
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script> 
     </head>
 
-    <body class="homepage">
+    <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href=".">Breezebee</a>
+                <a class="navbar-brand" href="..">Breezebee</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
@@ -33,14 +33,14 @@
                 <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href=".." class="nav-link">홈</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../how/" class="nav-link">사용법</a>
+                            </li>
                             <li class="navitem active">
-                                <a href="." class="nav-link">홈</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="how/" class="nav-link">사용법</a>
-                            </li>
-                            <li class="navitem">
-                                <a href="read/" class="nav-link">README</a>
+                                <a href="./" class="nav-link">README</a>
                             </li>
                         </ul>
 
@@ -51,12 +51,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" class="nav-link disabled">
+                                <a rel="prev" href="../how/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="how/" class="nav-link">
+                                <a rel="next" class="nav-link disabled">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -78,13 +78,29 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#welcome-to-mkdocs" class="nav-link">Welcome to MkDocs</a>
+            <li class="nav-item" data-level="1"><a href="#_1" class="nav-link">마크다운 언어로 정리</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#commands" class="nav-link">Commands</a>
+            <li class="nav-item" data-level="2"><a href="#git-github" class="nav-link">Git과 Github의 차이점</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#project-layout" class="nav-link">Project layout</a>
+            <li class="nav-item" data-level="2"><a href="#init-add-commit-m" class="nav-link">init, add, commit -m</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#remote-clone-push-pull" class="nav-link">remote, clone, push, pull</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#_2" class="nav-link"></a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#branch-checkout" class="nav-link">branch, checkout</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#merge-fast-forwardmerge-conflict" class="nav-link">merge (fast-forward/Merge conflict)</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -95,21 +111,43 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
+<h1 id="_1">마크다운 언어로 정리</h1>
+<h2 id="git-github"><strong>Git과 Github의 차이점</strong></h2>
 <ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
+<li><strong>Git이란</strong> - 로컬에서 소스코드를 버전으로 관리하는 시스템</li>
+<li><strong>Github란</strong> - 로컬에서 관리한 소스코드를 업로드하고 공유할 수 있는 공간</li>
 </ul>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre></div>
+<hr />
+<h2 id="init-add-commit-m"><strong>init, add, commit -m</strong></h2>
+<ul>
+<li><code>git init</code> - 폴더를 깃 저장소로 만들고 싶을 때 사용하는 명령어</li>
+<li><code>git add</code> - 수정한 파일들을 add로 스테이지에 추가하는 명령어</li>
+<li><code>git commit -m "commit message</code> - 스테이징 한 파일들을 커밋하는 명령어</li>
+</ul>
+<hr />
+<h2 id="remote-clone-push-pull"><strong>remote, clone, push, pull</strong></h2>
+<ul>
+<li><code>git remote</code> - 원격 저장소를 관리 할 수 있는 명령어 add, rename, rm 등의 옵션이 있다.</li>
+<li><code>git clone &lt;url&gt;</code> - 서버의 프로젝트를 로컬에 내려받을 때 사용하는 명령어</li>
+<li><code>git push &lt;name&gt; &lt;branch</code> - 깃허브에 내 로컬에 있는 코드를 올릴때 사용하는 명령어</li>
+<li><code>git pull &lt;remote&gt; &lt;branch&gt;</code> - 다른 사람이 코드를 업데이트 했을때 내 로컬과 다른 부분이 있기 때문에 pull로 새로 바뀐 코드를 가져와야할때 사용하는 명령어</li>
+</ul>
+<hr />
+<h2 id="_2"><img alt="image" src="https://i.ytimg.com/vi/0nqJKEh3YCc/maxresdefault.jpg" /></h2>
+<h2 id="branch-checkout"><strong>branch, checkout</strong></h2>
+<ul>
+<li><code>git branch</code> - 브랜치란 원래 코드와 독립적으로 개발을 진행할 수 있도록 독립적인 공간을 새로 만드는 것이다. </li>
+<li><code>git checkout &lt;branch name&gt;</code> - 존재하는 어떤 브랜치로 checkout을 하게 되면 해당 브랜치로 이동할 수 있게 된다. </li>
+</ul>
+<hr />
+<h2 id="merge-fast-forwardmerge-conflict"><strong>merge (fast-forward/Merge conflict)</strong></h2>
+<ul>
+<li><strong>merge</strong> - 깃을 관리하면서 다른 브랜치에서 생성된 파일들을 하나로 합쳐야 할 일이 발생한다. 그것을 merge하는 과정이라고 한다. </li>
+<li><strong>Fast-forward</strong> - 동일 내용이 포함되는 브랜치일 경우 브랜치 이동만으로 병합해서 따로 commit을 생성하지 않는 merge</li>
+<li><code>git merge &lt;NAME&gt;</code></li>
+<li><strong>Merge conflict</strong> - 서로 다른 파일을 수정하거나 같은 파일을 수정한 후 merge하는 과정에서 다른 내용으로 인한 충돌이 발생하는 경우 </li>
+</ul>
+<hr /></div>
             </div>
         </div>
 
@@ -118,11 +156,11 @@ docs/
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
         <script>
-            var base_url = ".",
+            var base_url = "..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="js/base.js" defer></script>
-        <script src="search/main.js" defer></script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -190,8 +228,3 @@ docs/
 
     </body>
 </html>
-
-<!--
-MkDocs version : 1.1.2
-Build Date UTC : 2021-01-27 03:33:28.038754+00:00
--->
